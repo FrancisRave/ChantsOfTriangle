@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fjjmoxf123sr"
-path="res://.godot/imported/shopping-cart.png-3209209c24c1faf7648a275d196912db.ctex"
+uid="uid://j33de2p5vsfl"
+path="res://.godot/imported/voiture.png-b4b5d7b786637b7164e9245f1dd30608.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets_emoji/shopping-cart.png"
-dest_files=["res://.godot/imported/shopping-cart.png-3209209c24c1faf7648a275d196912db.ctex"]
+source_file="res://emojis/thune/voiture.png"
+dest_files=["res://.godot/imported/voiture.png-b4b5d7b786637b7164e9245f1dd30608.ctex"]
 
 [params]
 

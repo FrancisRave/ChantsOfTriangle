@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4jccnkftfte4"
-path="res://.godot/imported/rocket-lunch.png-6512b3e7e2156ab59dc61152b6be065f.ctex"
+uid="uid://cn8i8h5xkx8ti"
+path="res://.godot/imported/haut_de_forme.png-24dc1bb299a28a93a6b7fc8447b196b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets_emoji/rocket-lunch.png"
-dest_files=["res://.godot/imported/rocket-lunch.png-6512b3e7e2156ab59dc61152b6be065f.ctex"]
+source_file="res://emojis/thune/haut_de_forme.png"
+dest_files=["res://.godot/imported/haut_de_forme.png-24dc1bb299a28a93a6b7fc8447b196b5.ctex"]
 
 [params]
 
