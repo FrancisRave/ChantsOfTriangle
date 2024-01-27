@@ -3,13 +3,16 @@
 [ext_resource type="Script" path="res://player.gd" id="1_s75fm"]
 [ext_resource type="PackedScene" uid="uid://b78pjbfesreit" path="res://Assets_persos_3D/bonom.glb" id="1_yu3hu"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_u3vio"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_krbpp"]
+radius = 0.733372
+height = 2.27205
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_s75fm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_u3vio")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14669, 0)
+shape = SubResource("CapsuleShape3D_krbpp")
 
 [node name="Pivot" type="Node3D" parent="."]
 
