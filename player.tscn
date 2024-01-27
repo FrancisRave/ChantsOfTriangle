@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsf5uwlknp35d"]
+[gd_scene load_steps=3 format=3 uid="uid://bsf5uwlknp35d"]
+
+[ext_resource type="PackedScene" uid="uid://b78pjbfesreit" path="res://bonom.glb" id="1_yu3hu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u3vio"]
 
@@ -6,3 +8,7 @@
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_u3vio")
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="bonom" parent="Pivot" instance=ExtResource("1_yu3hu")]
