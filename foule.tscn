@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1ogynjte7rc1"]
+
+[ext_resource type="PackedScene" uid="uid://dv74gncks6gtq" path="res://Assets_persos_3D/bonom_foule.glb" id="1_prx8c"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_36n8v"]
+radius = 0.686902
+
+[node name="Foule" type="CharacterBody3D"]
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="bonom_foule" parent="Node3D" instance=ExtResource("1_prx8c")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.999469, 0)
+shape = SubResource("CapsuleShape3D_36n8v")

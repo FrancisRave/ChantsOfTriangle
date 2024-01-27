@@ -1,4 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cyr2dqgimfuwe"]
+[gd_scene load_steps=6 format=3 uid="uid://cyr2dqgimfuwe"]
+
+[ext_resource type="PackedScene" uid="uid://bsf5uwlknp35d" path="res://player.tscn" id="1_kgrod"]
+[ext_resource type="PackedScene" uid="uid://b1ogynjte7rc1" path="res://foule.tscn" id="2_kp8qu"]
 
 [sub_resource type="Environment" id="Environment_jpghu"]
 
@@ -25,3 +28,15 @@ mesh = SubResource("BoxMesh_rgmit")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3, 0)
 shadow_enabled = true
+
+[node name="Marker3D" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 7)
+
+[node name="Camera3D" type="Camera3D" parent="Marker3D"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+size = 10.0
+
+[node name="Player" parent="." instance=ExtResource("1_kgrod")]
+
+[node name="Foule" parent="." instance=ExtResource("2_kp8qu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.54356)
