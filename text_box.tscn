@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bf2ocqfgdwm5a"]
+
+[node name="TextBox" type="MarginContainer"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
