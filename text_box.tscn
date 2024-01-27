@@ -1,8 +1,40 @@
-[gd_scene format=3 uid="uid://bf2ocqfgdwm5a"]
+[gd_scene load_steps=3 format=3 uid="uid://bf2ocqfgdwm5a"]
+
+[ext_resource type="Texture2D" uid="uid://gmy35r4anc6a" path="res://text_box.png" id="1_3gopn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m7k10"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Emotes",
+"speed": 5.0
+}]
 
 [node name="TextBox" type="MarginContainer"]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_right = 131.0
+offset_bottom = 53.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 2
+texture = ExtResource("1_3gopn")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Emote_1" type="AnimatedSprite2D" parent="MarginContainer/GridContainer"]
+position = Vector2(16, 18)
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_m7k10")
+animation = &"Emotes"
