@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://d1ssgqdkvgp2"]
+[gd_scene load_steps=16 format=3 uid="uid://d1ssgqdkvgp2"]
 
 [ext_resource type="Texture2D" uid="uid://cmg6e0d00vekj" path="res://emojis/bouffe/aubergine.png" id="1_bc1rh"]
 [ext_resource type="Texture2D" uid="uid://dlpmktt8t0qpn" path="res://emojis/bouffe/poire.png" id="2_hdymf"]
@@ -16,59 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://b0yenuf23rtcw" path="res://emojis/thune/dollar.png" id="14_ktj20"]
 [ext_resource type="Texture2D" uid="uid://j33de2p5vsfl" path="res://emojis/thune/voiture.png" id="15_cw2im"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ort1x"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_bc1rh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_hdymf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_qqcyc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_5h5jw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_pams5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_5uuhw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_hm8pt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_23nsp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_cs8ee")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_wj38c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_sc3ut")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_0lnly")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_ktj20")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_5650g")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_cw2im")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [node name="parler" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -80,14 +27,16 @@ grow_vertical = 2
 [node name="MarginContainer" type="MarginContainer" parent="."]
 texture_filter = 1
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -270.0
+offset_right = 64.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
+grow_vertical = 0
 theme_override_constants/margin_bottom = 50
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer"]
@@ -95,27 +44,10 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer3"]
-texture_filter = 1
-layout_mode = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Emojis" type="HBoxContainer" parent="MarginContainer/VBoxContainer3/MarginContainer2"]
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/VBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-
-[node name="Emoji1" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer3/MarginContainer2/Emojis"]
-sprite_frames = SubResource("SpriteFrames_ort1x")
-
-[node name="Emoji2" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer3/MarginContainer2/Emojis"]
-sprite_frames = SubResource("SpriteFrames_ort1x")
-
-[node name="Emoji3" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer3/MarginContainer2/Emojis"]
-sprite_frames = SubResource("SpriteFrames_ort1x")
 
 [node name="Nourriture" type="HBoxContainer" parent="MarginContainer/VBoxContainer3"]
 layout_mode = 2
