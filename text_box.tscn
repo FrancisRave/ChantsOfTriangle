@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://qdiq7ux65hi0" path="res://emojis/objet/moai.png" id="10_pkq2b"]
 [ext_resource type="Texture2D" uid="uid://qulflujj27rf" path="res://emojis/tete/visage_clin_doeil.png" id="11_dp3ga"]
 [ext_resource type="Texture2D" uid="uid://cjltp222qmqg0" path="res://emojis/tete/visage_pleurs.png" id="12_qtn2f"]
-[ext_resource type="Texture2D" uid="uid://cvx8s5bri7pv4" path="res://emojis/tete/visage_sommeill.png" id="13_11nrm"]
+[ext_resource type="Texture2D" uid="uid://cvx8s5bri7pv4" path="res://emojis/tete/visage_sommeil.png" id="13_11nrm"]
 [ext_resource type="Texture2D" uid="uid://b0yenuf23rtcw" path="res://emojis/thune/dollar.png" id="14_m2ada"]
 [ext_resource type="Texture2D" uid="uid://cn8i8h5xkx8ti" path="res://emojis/thune/haut_de_forme.png" id="15_hpki1"]
 [ext_resource type="Texture2D" uid="uid://j33de2p5vsfl" path="res://emojis/thune/voiture.png" id="16_fk17o"]

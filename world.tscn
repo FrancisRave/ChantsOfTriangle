@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyr2dqgimfuwe"]
+[gd_scene load_steps=8 format=3 uid="uid://cyr2dqgimfuwe"]
 
+[ext_resource type="Script" path="res://world.gd" id="1_bsg54"]
 [ext_resource type="PackedScene" uid="uid://bsf5uwlknp35d" path="res://player.tscn" id="1_kgrod"]
 [ext_resource type="PackedScene" uid="uid://b1ogynjte7rc1" path="res://foule.tscn" id="2_kp8qu"]
+[ext_resource type="AudioStream" uid="uid://18ott3n4cixi" path="res://triangles.mp3" id="4_wd6kt"]
 
 [sub_resource type="Environment" id="Environment_jpghu"]
 
@@ -12,6 +14,7 @@ size = Vector3(10, 1, 10)
 size = Vector3(10, 1, 10)
 
 [node name="World" type="Node3D"]
+script = ExtResource("1_bsg54")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jpghu")
@@ -40,3 +43,10 @@ size = 10.0
 
 [node name="Foule" parent="." instance=ExtResource("2_kp8qu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.54356)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_wd6kt")
+volume_db = -12.0
+autoplay = true
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

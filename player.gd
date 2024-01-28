@@ -5,6 +5,10 @@ extends CharacterBody3D
 var target_velocity = Vector3.ZERO
 var parle = false
 
+var emoji1 = 0
+var emoji2 = 0
+var emoji3 = 0
+
 
 func _physics_process(delta):
 	
@@ -37,3 +41,4 @@ func _physics_process(delta):
 		else:
 			$parler.visible = true
 			parle = true
+			

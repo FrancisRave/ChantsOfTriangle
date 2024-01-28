@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbp61h4wcx2np"]
+
+[ext_resource type="Script" path="res://bulle.gd" id="1_mom6a"]
+[ext_resource type="Texture2D" uid="uid://bili86wbcuu4e" path="res://emojis/point.png" id="2_kqn86"]
+[ext_resource type="AudioStream" uid="uid://ho62s20rjhvq" path="res://blabla.mp3" id="3_poqwe"]
+
+[node name="Bulle" type="Node3D"]
+script = ExtResource("1_mom6a")
+
+[node name="Symbolea1" type="Sprite3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.75, 3, 0)
+texture = ExtResource("2_kqn86")
+
+[node name="Symbolea2" type="Sprite3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 3, 0)
+texture = ExtResource("2_kqn86")
+
+[node name="Symbolea3" type="Sprite3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.75, 3, 0)
+texture = ExtResource("2_kqn86")
+
+[node name="timer_parle" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_poqwe")
+
+[connection signal="timeout" from="timer_parle" to="." method="_on_timer_parle_timeout"]

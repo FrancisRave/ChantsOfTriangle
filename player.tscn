@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bsf5uwlknp35d"]
+[gd_scene load_steps=6 format=3 uid="uid://bsf5uwlknp35d"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_s75fm"]
 [ext_resource type="PackedScene" uid="uid://6oa2kni2a7fn" path="res://Assets_persos_3D/bonom_player.glb" id="2_pi867"]
 [ext_resource type="PackedScene" uid="uid://d1ssgqdkvgp2" path="res://parler.tscn" id="3_7x74f"]
+[ext_resource type="PackedScene" uid="uid://dbp61h4wcx2np" path="res://bulle.tscn" id="4_4db6a"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_krbpp"]
 radius = 0.733372
@@ -22,3 +23,7 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 
 
 [node name="parler" parent="." instance=ExtResource("3_7x74f")]
 visible = false
+
+[node name="Bulle" parent="." instance=ExtResource("4_4db6a")]
+
+[connection signal="parler" from="parler" to="Bulle" method="_on_parler_parler"]
