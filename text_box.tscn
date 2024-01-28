@@ -1,12 +1,72 @@
-[gd_scene load_steps=3 format=3 uid="uid://bf2ocqfgdwm5a"]
+[gd_scene load_steps=18 format=3 uid="uid://bf2ocqfgdwm5a"]
 
 [ext_resource type="Texture2D" uid="uid://gmy35r4anc6a" path="res://text_box.png" id="1_3gopn"]
+[ext_resource type="Texture2D" uid="uid://cmg6e0d00vekj" path="res://emojis/bouffe/aubergine.png" id="2_f2cq6"]
+[ext_resource type="Texture2D" uid="uid://dlpmktt8t0qpn" path="res://emojis/bouffe/poire.png" id="3_ryxcq"]
+[ext_resource type="Texture2D" uid="uid://bv42kjb7jck23" path="res://emojis/bouffe/steak.png" id="4_dj7lb"]
+[ext_resource type="Texture2D" uid="uid://g2l8tl0cknx1" path="res://emojis/main/pouce_baisse.png" id="5_yweig"]
+[ext_resource type="Texture2D" uid="uid://dccjki20qrn6y" path="res://emojis/main/pouce_doigt.png" id="6_pk4a3"]
+[ext_resource type="Texture2D" uid="uid://cnkr2a446bp0k" path="res://emojis/main/pouce_leve.png" id="7_i0cag"]
+[ext_resource type="Texture2D" uid="uid://cc7nuwvafs13x" path="res://emojis/objet/carton.png" id="8_kaknx"]
+[ext_resource type="Texture2D" uid="uid://bbmkbjdbjpxts" path="res://emojis/objet/maison.png" id="9_s4fmf"]
+[ext_resource type="Texture2D" uid="uid://qdiq7ux65hi0" path="res://emojis/objet/moai.png" id="10_pkq2b"]
+[ext_resource type="Texture2D" uid="uid://qulflujj27rf" path="res://emojis/tete/visage_clin_doeil.png" id="11_dp3ga"]
+[ext_resource type="Texture2D" uid="uid://cjltp222qmqg0" path="res://emojis/tete/visage_pleurs.png" id="12_qtn2f"]
+[ext_resource type="Texture2D" uid="uid://cvx8s5bri7pv4" path="res://emojis/tete/visage_sommeill.png" id="13_11nrm"]
+[ext_resource type="Texture2D" uid="uid://b0yenuf23rtcw" path="res://emojis/thune/dollar.png" id="14_m2ada"]
+[ext_resource type="Texture2D" uid="uid://cn8i8h5xkx8ti" path="res://emojis/thune/haut_de_forme.png" id="15_hpki1"]
+[ext_resource type="Texture2D" uid="uid://j33de2p5vsfl" path="res://emojis/thune/voiture.png" id="16_fk17o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m7k10"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f2cq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ryxcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dj7lb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yweig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pk4a3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_i0cag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kaknx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_s4fmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pkq2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dp3ga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qtn2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_11nrm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_m2ada")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hpki1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fk17o")
+}],
 "loop": true,
-"name": &"Emotes",
+"name": &"emojis",
 "speed": 5.0
 }]
 
@@ -33,8 +93,9 @@ theme_override_constants/margin_bottom = 8
 layout_mode = 2
 size_flags_horizontal = 0
 
-[node name="Emote_1" type="AnimatedSprite2D" parent="MarginContainer/GridContainer"]
-position = Vector2(16, 18)
+[node name="Emojis" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(24, 26)
 scale = Vector2(0.05, 0.05)
 sprite_frames = SubResource("SpriteFrames_m7k10")
-animation = &"Emotes"
+animation = &"emojis"
